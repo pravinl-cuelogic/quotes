@@ -1,6 +1,10 @@
 {{!-- The following component displays Ember's default welcome message. --}}
 {{!--welcome-page--}}
+{{#if show}}
 <h3>Welcome to {{appName}}!</h3>
+{{else}}
+<h3>Welcome to Default Ember App!</h3>
+{{/if}}
 {{!-- Feel free to remove this! --}}
 
 {{outlet}}
