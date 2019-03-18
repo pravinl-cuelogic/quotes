@@ -7,6 +7,11 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('home');
+  this.route('user', {path: 'profile'}, function() {
+    this.route('following');
+    this.route('followers');
+  });
 });
 
 export default Router;
