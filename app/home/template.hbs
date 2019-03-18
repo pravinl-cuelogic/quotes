@@ -1,2 +1,35 @@
 <h1>Home Page</h1>
-{{outlet}}
+{{!--outlet--}}
+<!--main container -->
+        <div class="container-fluid">
+            <div class="container">
+                <div class="col-sm-8">
+                    <div class="quote main">
+                  	  <textarea
+                  	  	class="form-control" placeholder="what's heppening?">
+                  	  		<input 
+                  	  		  type="submit" name="" value="Share"
+                  	  		  class="btn btn-default btn-sm pull-right"
+                  	  		>
+                  	  	</textarea>
+                    </div>
+                    <div class="p-q">
+                    	<div class="inner">
+                    	    <div class="row">
+                    	    	<div class="col-sm-1">
+                    	    		<img src="images/gravatar.png" alt="avatar">
+                    	    	</div>
+                    	    	<div class="col-sm-11">
+                    	    		<h2>
+                    	    			John <small>@john</small><small>.</small><small></small>
+                    	    		</h2>
+                    	    		<p>I am what I am.</p>
+                    	    	</div>
+                    	    </div>	
+                    	</div>
+                    </div>
+                </div>
+                {{profile-details user=model.user}}
+            </div>
+        </div>
+<!--/main container -->
