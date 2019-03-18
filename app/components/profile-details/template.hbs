@@ -1,31 +1,31 @@
 {{!--yield--}}
 
 <div class="col-sm-4">
-                    <div class="pro-m">
-                        <div class="t-bg"></div>
-                        <div class="form-group">
-                            {{#link-to "user" class="secbox"}}
-                                <img src="images/gravatar.png" alt="avatar">
-                                <h2>{{user.username}}</h2>
-                                <p>@{{user.username}}</p>
-                                <div>{{user.aboutMe}}</div>
-                            {{/link-to}}
-                        </div>
-                        <div class="form-group">
-                            <div class="row mrgn-m">
-                                <div class="col-sm-4">
-                                    <span class="small-txt">quotes</span>
-                                    <span class="big-txt">{{user.numberOfQuotes}}</span>
-                                </div>
-                                <div class="col-sm-4">
-                                    <span class="small-txt">following</span>
-                                    <span class="big-txt">{{#link-to "user.following" }}{{user.numberOfFollowing}} {{/link-to}}</span>
-                                </div>
-                                <div class="col-sm-4">
-                                    <span class="small-txt">followers</span>
-                                    <span class="big-txt">{{#link-to "user.followers" }}{{user.numberOfFollowers}}{{/link-to}}</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <div class="pro-m">
+        <div class="t-bg"></div>
+        <div class="form-group">
+            {{#link-to "user" class="secbox"}}
+                <img src="images/gravatar.png" alt="avatar">
+                <h2>John{{!--user.username--}}</h2>
+                <p>@john{{!--user.username--}}</p>
+                <div>{{!--user.aboutMe--}}</div>
+            {{/link-to}}
+        </div>
+        <div class="form-group">
+            <div class="row mrgn-m">
+                <div class="col-sm-4">
+                    <span class="small-txt">quotes</span>
+                    <span class="big-txt">255{{!--user.numberOfQuotes--}}</span>
+                </div>
+                <div class="col-sm-4">
+                    <span class="small-txt">following</span>
+                    <span class="big-txt">{{#link-to "user.following" }}45 {{user.numberOfFollowing}} {{/link-to}}</span>
+                </div>
+                <div class="col-sm-4">
+                    <span class="small-txt">followers</span>
+                    <span class="big-txt">{{#link-to "user.followers" }}45,455 {{user.numberOfFollowers}}{{/link-to}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
