@@ -1,0 +1,9 @@
+<div class="p-q">
+	<div class="inner">
+	{{#each quotes as |quote|}}
+	{{!-- if you want sorted quotes then use following each loop--}}
+	{{!--#each sortedQuotes / quoteSorting as |quote|--}}
+	    {{quotes-list/quote-message quote=quote}}
+	{{/each}}
+	</div>
+</div>

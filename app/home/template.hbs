@@ -5,23 +5,10 @@
             <div class="container">
                 <div class="col-sm-8">
                     <QuotesUpdate />
-                    <div class="p-q">
-                    	<div class="inner">
-                    	    <div class="row">
-                    	    	<div class="col-sm-1">
-                    	    		<img src="images/gravatar.png" alt="avatar">
-                    	    	</div>
-                    	    	<div class="col-sm-11">
-                    	    		<h2>
-                    	    			John <small>@john</small><small>.</small><small></small>
-                    	    		</h2>
-                    	    		<p>I am what I am.</p>
-                    	    	</div>
-                    	    </div>	
-                    	</div>
-                    </div>
+                    <QuotesList @quotes={{model.quotes}}/>
                 </div>
-                <ProfileDetails @user=model.user />
+                {{!--log '@user=model.user' model.user --}}
+                <ProfileDetails @user={{model.user}} />
             </div>
         </div>
 <!--/main container -->

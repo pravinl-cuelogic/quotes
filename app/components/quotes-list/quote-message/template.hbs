@@ -1,0 +1,10 @@
+<div class="row">
+	<div class="col-sm-1">
+		<img src="images/gravatar.png" alt="avatar">
+	</div>
+	<div class="col-sm-11">
+	    {{log 'Quote.user' quote.user.username}}
+		{{#link-to "user"}}<h2> John {{quote.user.username}} </h2>{{/link-to}}
+		<p>{{quote.text}}</p>
+	</div>
+</div>
